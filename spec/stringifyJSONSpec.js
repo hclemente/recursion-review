@@ -8,11 +8,11 @@ describe('stringifyJSON', function() {
       expect(result).to.equal(expected);
     });
 
-    // unstringifiableValues.forEach(function(obj) {
-    //   var expected = JSON.stringify(obj);
-    //   var result = stringifyJSON(obj);
-    //   expect(result).to.equal(FILL_ME_IN);
-    // });
-
+    unstringifiableValues.forEach(function(obj) {
+      var expected = JSON.stringify(obj);
+      var result = stringifyJSON(obj);
+      console.log(expected);
+      expect(result).to.equal(expected);
+    });
   });
 });
